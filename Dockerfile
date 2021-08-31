@@ -13,7 +13,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     wget http://www.softether-download.com/files/softether/${VERSION}-tree/Linux/SoftEther_VPN_Client/64bit_-_Intel_x64_or_AMD64/softether-vpnclient-${VERSION}-linux-x64-64bit.tar.gz -O /tmp/softether-vpnclient.tar.gz &&\
     tar -xzvf /tmp/softether-vpnclient.tar.gz -C /usr/local/ && \
     rm /tmp/softether-vpnclient.tar.gz && \
-    make i_read_and_agree_the_license_agreement && \
+    make && \
     apt-get purge -y -q --auto-remove gcc make wget
 
 ADD entrypoint.sh /
