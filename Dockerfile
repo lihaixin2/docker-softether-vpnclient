@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM debian:buster
 MAINTAINER Haixin Lee <docker@lihaixin.name>
 
 #ENV VERSION v4.24-9651-beta-2017.10.23
