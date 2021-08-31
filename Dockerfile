@@ -1,7 +1,8 @@
 FROM ubuntu:16.04
 MAINTAINER Haixin Lee <docker@lihaixin.name>
 
-ENV VERSION v4.24-9651-beta-2017.10.23
+#ENV VERSION v4.24-9651-beta-2017.10.23
+ENV VERSION v4.38-9760-rtm-2021.08.17
 WORKDIR /usr/local/vpnclient
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
